@@ -44,3 +44,7 @@ flutter pub get
 
 # Run the app on connected device/emulator
 flutter run
+
+## 🔗 Download
+
+[![Download APK](https://img.shields.io/badge/Download%20APK-FF5722?style=for-the-badge&logo=android&logoColor=white)](https://drive.google.com/uc?export=download&id=1T-iiSr0AEndsSEggNpFItpGPn7VnTYqA)
