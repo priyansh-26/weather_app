@@ -44,6 +44,7 @@ flutter pub get
 
 # Run the app on connected device/emulator
 flutter run
+```
 
 ## 🔗 Download
 
