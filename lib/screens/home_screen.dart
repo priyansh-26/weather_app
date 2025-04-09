@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:weather_app/models/weather_model.dart';
 import 'package:weather_app/services/weather_services.dart';
+import 'package:weather_app/widgets/weather_card.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -26,6 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
     });
     try {
       final weather = await _weatherServices.fetchWeather(_controller.text);
+      print(weather);
       setState(() {
         _weather = weather;
         _isLoading = false;
@@ -134,8 +136,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       color: Colors.white,
                     ),
                   ),
-                
-                
+                if (_weather != null) WeatherCard(weather: _weather!),
               ],
             ),
           ),

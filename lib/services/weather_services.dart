@@ -5,7 +5,7 @@ import 'dart:convert';
 class WeatherServices {
   final String apikey = "acd81bb6f223e5461101fcb0eeeae23d";
   
-  get http => null;
+  
 
   Future<Weather> fetchWeather(String cityName) async {
     final url = Uri.parse(
